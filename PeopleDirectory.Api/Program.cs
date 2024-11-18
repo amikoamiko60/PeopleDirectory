@@ -23,8 +23,6 @@ builder.Services.AddControllers(options =>
     factory.Create(typeof(ValidationMessages));
 });
 
-builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(a =>
 {
