@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PeopleDirectory.BusinessLogic.Interfaces\PeopleDirectory.BusinessLogic.Interfaces.csproj" />
+    <ProjectReference Include="..\PeopleDirectory.BusinessLogic\PeopleDirectory.BusinessLogic.csproj" />
+    <ProjectReference Include="..\PeopleDirectory.DataAccess.Interfaces\PeopleDirectory.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\PeopleDirectory.DataAccess\PeopleDirectory.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

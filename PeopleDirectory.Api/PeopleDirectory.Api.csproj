@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PeopleDirectory.BusinessLogic.Interfaces\PeopleDirectory.BusinessLogic.Interfaces.csproj" />
+    <ProjectReference Include="..\PeopleDirectory.BusinessLogic\PeopleDirectory.BusinessLogic.csproj" />
+    <ProjectReference Include="..\PeopleDirectory.DataAccess\PeopleDirectory.DataAccess.csproj" />
+    <ProjectReference Include="..\PeopleDirectory.DataContracts\PeopleDirectory.DataContracts.csproj" />
+  </ItemGroup>
+
+</Project>
