@@ -16,7 +16,6 @@ namespace PeopleDirectory.BusinessLogic.Interfaces.Services
 
         Task<string> UploadPhotoAsync(int id, IFormFile file, CancellationToken cancellationToken);
 
-
         Task<PaginatedIndividualsResponse> GetIndividualsAsync(SearchIndividualsRequest request, CancellationToken cancellationToken);
     }
 }
