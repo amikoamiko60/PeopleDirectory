@@ -24,7 +24,7 @@ namespace PeopleDirectory.Api.Controllers
 
         [HttpGet("{id}")]
         public async Task GetIndividual([FromRoute] int id, CancellationToken cancellationToken)
-         => await inidividualService.GetIndividual(id, cancellationToken);
+         => await inidividualService.GetIndividualAsync(id, cancellationToken);
 
         [HttpDelete("{id}")]
         public async Task DeleteIndividual([FromRoute] int id, CancellationToken cancellationToken)

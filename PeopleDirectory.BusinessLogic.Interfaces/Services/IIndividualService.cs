@@ -12,7 +12,7 @@ namespace PeopleDirectory.BusinessLogic.Interfaces.Services
         
         Task EditIndividualAsync(int id, EditIndividualRequest request, CancellationToken cancellationToken = default);
         
-        Task GetIndividual(int id, CancellationToken cancellationToken);
+        Task GetIndividualAsync(int id, CancellationToken cancellationToken);
 
         Task<string> UploadPhotoAsync(int id, IFormFile file, CancellationToken cancellationToken);
 

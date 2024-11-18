@@ -42,7 +42,7 @@ namespace PeopleDirectory.BusinessLogic.Services
             await unitOfWork.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task GetIndividual(int id, CancellationToken cancellationToken)
+        public async Task GetIndividualAsync(int id, CancellationToken cancellationToken)
         => await individualRepo.GetIndividualByIdAsync(id, cancellationToken);
 
         public async Task<PaginatedIndividualsResponse> GetIndividualsAsync(SearchIndividualsRequest request, CancellationToken cancellationToken)
